@@ -1,0 +1,43 @@
+#sb_background {
+	background-color: white !important;
+	opacity: 1 !important;
+}
+
+li.sb_prev, li.sb_next {
+	opacity: 0 !important;
+	-webkit-transition: opacity 1s linear;
+}
+li.sb_item {
+	margin-right: 500px !important;
+}
+
+#sb_container {
+	top: 0 !important;
+	bottom: 0 !important;
+}
+.sb_image {
+	padding: 0 !important;
+	
+	-moz-box-shadow: 5px 5px 5px #ccc;
+	-webkit-box-shadow: 5px 5px 5px #ccc;
+	box-shadow: 5px 5px 5px #ccc;
+}
+
+.sb_caption {
+	position: fixed !important;
+	left: 0 !important;
+	right: 0 !important;
+	bottom: 0;
+	
+	font-family: 'Helvetica Neue', HelveticaNeue, Arial, sans-serif;
+	text-align: center;
+	font-size: 16px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 200;
+	letter-spacing: 1px;
+}
+
+#sb_close {
+	display: none !important;
+}

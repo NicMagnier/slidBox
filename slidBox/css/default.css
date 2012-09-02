@@ -1,0 +1,30 @@
+#sb_background {
+	background-color: #4a4a4b !important;	
+}
+
+/*
+	You can force some presentation settings in this css file but it's optional
+	But don't play to much with the positiom and display settings. I'm just saying ...
+	
+#sb_container {
+	top: 5% !important;
+	bottom: 5% !important;
+}
+
+#sb_background {
+	background-color: white !important;	
+	background-image: url('background.png');	
+}
+
+#sb_container img {
+	padding: 5px;
+	background-color: white;
+	border: 1px solid grey;
+	box-shadow: 3px 3px 4px #000;
+}
+
+#sb_container li {
+	border:  1px solid red;
+}
+
+*/

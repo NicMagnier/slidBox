@@ -1,0 +1,45 @@
+#sb_background {
+	background-color: white !important;	
+	background-image: url('../images/paper.png') !important;
+	background-position: 5px 6px;
+	opacity: 0.95 !important;
+}
+
+.sb_image {
+	padding: 0 !important;
+}
+
+.sb_caption {
+	background-color: #ffff72 !important;
+	font-family: 'Marker Felt', 'Comic Sans MS';
+	font-weight: bolder;
+	font-size: 24px;
+	width: 300px ! important;
+	
+	-moz-box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	
+	-webkit-transform:rotate(-5deg);
+	-moz-transform:rotate(-5deg);
+	
+	left: 50px ! important;
+}
+
+#sb_close {
+	background-color: #ffff72 !important;
+	font-family: 'Marker Felt', 'Comic Sans MS';
+	font-weight: bolder;
+	font-size: 24px;
+
+	-moz-box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	-webkit-box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	box-shadow: 5px 5px 5px rgba(32,32,32,0.5);
+	
+	-webkit-transform:rotate(7deg);
+	-moz-transform:rotate(7deg);
+
+	padding: 1em !important;
+	padding-top: 1.5em !important;
+	top: -1em !important;
+}

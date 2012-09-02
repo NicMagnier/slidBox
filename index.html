@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head><title>slidBox Example Page</title>
+
+<script src="jquery-1.4.2.js" type="text/javascript"></script>
+<script src="slidBox/slidBox.js" type="text/javascript"></script>
+
+<link rel="stylesheet" type="text/css" href="./slidBox/css/default.css" title="Default">
+<link rel="alternate stylesheet" type="text/css" href="./slidBox/css/postit.css" title="Postit">
+<link rel="alternate stylesheet" type="text/css" href="./slidBox/css/presentation.css" title="Presentation">
+
+<!-- Page sytle, not related to slidBox -->
+<style type="text/css">
+html { -webkit-font-smoothing: antialiased; }
+body {
+	background-color: white;
+	color:  #333;
+	font-family: Helvetica, Arial, Verdana;
+}
+h1 {
+	font-size: 3.2em;
+	color: #3a7dd1;
+}
+#column_container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+}
+a[rel] img { border: 0; }
+</style>
+
+</head>
+
+<body onLoad="slidBox.init();">
+<div id="column_container">
+	<h1>slidBox</h1>
+	
+	<h2>Overview</h2>
+	<p>Proin at eros non eros adipiscing mollis. Donec semper turpis sed diam. Sed consequat ligula nec tortor. Integer eget sem. Ut vitae enim eu est vehicula gravida. Morbi ipsum ipsum, porta nec, tempor id, auctor vitae, purus. Pellentesque neque. Nulla luctus erat vitae libero. Integer nec enim. Phasellus aliquam enim et tortor. Quisque aliquet, quam elementum condimentum feugiat, tellus odio consectetuer wisi, vel nonummy sem neque in elit. Curabitur eleifend wisi iaculis ipsum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non velit non ligula laoreet ultrices. Praesent ultricies facilisis nisl. Vivamus luctus elit sit amet mi. Phasellus pellentesque, erat eget elementum volutpat, dolor nisl porta neque, vitae sodales ipsum nibh in ligula. Maecenas mattis pulvinar diam. Curabitur sed leo.</p>
+	<ul>
+		<li>Simple overlay image viewer to integrate to any website</li>
+		<li>Display set of pictures as a slideshow</li>
+		<li>Several themes and easy customization through css</li>
+		<li>Keyboard support to navigate from picture to picture</li>
+		<li>Support of iOS devices with a tactile interface</li>
+	</ul>
+		
+	<h2>Examples</h2>
+	
+	<p>Change the style of the gallery using the following menu:
+	<select onChange="setActiveStyleSheet(this.options[this.selectedIndex].value);">
+	  <option value="Default">Default (no css file)</option>
+	  <option value="Postit">Postit</option>
+	  <option value="Presentation">Presentation</option>
+	</select></p>
+	
+	<h3>Single picture</h3>
+	
+	<p>
+	<a href="./sample/single/saturn.jpg" title="Saturn at equinox - picture of the moon Daphnis. From: <a href='http://www.boston.com/bigpicture/2009/10/saturn_at_equinox.html'>The Big Picture</a>" rel="slidBox"><img src="./sample/single/thumb/saturn.jpg" /></a>
+	<a href="./sample/single/LosAngeles.jpg" title="Color picture of Los Angeles in the 40's. From: <a href='http://www.acontinuouslean.com/2010/03/09/the-left-side-is-the-best-side/'>A continuous Lean</a>" rel="slidBox"><img src="./sample/single/thumb/LosAngeles.jpg" /></a>
+	<a href="./sample/single/minimalism.jpg" title="Minimalism Poster. From: <a href='http://blog.sub-studio.com/2010/05/paper-music-posters-i-love-minimalism.html'>sub-studio blog</a>" rel="slidBox"><img src="./sample/single/thumb/minimalism.jpg" /></a>
+	</p>
+
+	<h3>Gallery</h3>
+	<a rel="slidBox:orioto" href="./sample/orioto/Mario_World_by_Orioto.jpg" title="<i>Mario World</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Mario_World_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/Yoshi__s_Playground_by_Orioto.jpg" title="<i>Yoshi's Playground</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Yoshi__s_Playground_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/Up_in_the_sky_by_Orioto.jpg" title="<i>Up in the sky</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Up_in_the_sky_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/Ice_Climber_by_Orioto.jpg" title="<i>Ice Climber</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Ice_Climber_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/Do_a_Barrel_Roll_by_Orioto.jpg" title="<i>Do a Barrel Roll</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Do_a_Barrel_Roll_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/Bird_Chase_Time_by_Orioto.jpg" title="<i>Bird Chase Time</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/Bird_Chase_Time_by_Orioto.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/cave_story_by_orioto-d2zabv6.jpg" title="<i>Pignon Party</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/cave_story_by_orioto-d2zabv6.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/better_stay_in_bed_by_orioto-d36kzo0.jpg" title="<i>Better stay in bed</i> by <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/better_stay_in_bed_by_orioto-d36kzo0.jpg" /></a>
+	<a rel="slidBox:orioto" href="./sample/orioto/swimming_under_clouds_by_orioto-d2xmjum.jpg" title="<i>Swimming Under Clouds</i> a game by <a href='http://http://www.pieceofpiestudios.com/'>Piece of Pie Studios</a> and <a href='http://orioto.deviantart.com/'>Orioto</a>"><img src="./sample/orioto/thumb/swimming_under_clouds_by_orioto-d2xmjum.jpg" /></a>
+
+	<h3>Slideshow</h3>
+	<p>
+		<a href="./sample/slides/01.jpg" rel="slidBox:slides" title="The following slides were created by Will Lion - <a href='http://www.flickr.com/photos/will-lion/'>Flickr</a>">Start the show</a>
+		<a href="./sample/slides/02.jpg" rel="slidBox:slides" style="display:none;">.</a>
+		<a href="./sample/slides/03.jpg" rel="slidBox:slides" style="display:none;">.</a>
+		<a href="./sample/slides/04.jpg" rel="slidBox:slides" style="display:none;">.</a>
+		<a href="./sample/slides/05.jpg" rel="slidBox:slides" style="display:none;">.</a>
+		<a href="./sample/slides/06.jpg" rel="slidBox:slides" style="display:none;" title="This is the last slide">.</a>
+	</p>
+</div>
+
+</body></html>
+
+<!-- Used to switch the stylesheet in the page - Not related to slidBox -->
+<!-- http://www.alistapart.com/articles/alternate/ -->
+<script type="text/javascript">
+function setActiveStyleSheet(title) {
+	var i, a, main;
+		for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+			if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
+			a.disabled = true;
+			if(a.getAttribute("title") == title) a.disabled = false;
+		}
+	}
+}
+
+function getActiveStyleSheet() {
+	var i, a;
+	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+		if(a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title") && !a.disabled) return a.getAttribute("title");
+	}
+	return null;
+}
+
+function getPreferredStyleSheet() {
+	var i, a;
+	for(i=0; (a = document.getElementsByTagName("link")[i]); i++) {
+		if(a.getAttribute("rel").indexOf("style") != -1
+			&& a.getAttribute("rel").indexOf("alt") == -1
+			&& a.getAttribute("title")
+				) return a.getAttribute("title");
+	}
+	return null;
+}
+</script>
